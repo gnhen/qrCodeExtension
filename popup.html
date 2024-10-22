@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- Use local QRious library -->
+    <script src="qrious.min.js"></script>
+    <script src="popup.js"></script>
+</head>
+
+<body>
+    <div id="popup-content">
+        <input type="text" id="url-input" placeholder="URL">
+        <div id="qr-container">
+            <canvas id="qr-code"></canvas>
+        </div>
+        <div class="controls">
+            <label>
+                Background Color (hex):
+                <input type="text" id="bg-color" value="#FFFFFF" placeholder="#FFFFFF">
+            </label>
+            <label>
+                Fill Color (hex):
+                <input type="text" id="fill-color" value="#000000" placeholder="#000000">
+            </label>
+            <label>
+                QR Code Size:
+                <input type="number" id="size" value="200" min="100" max="400">
+            </label>
+        </div>
+    </div>
+</body>
+
+</html>

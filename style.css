@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 300px;
+    padding: 15px;
+    margin: 0;
+}
+
+#popup-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#url-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#qr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    margin: 10px 0;
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 4px;
+}
+
+#qr-code {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.controls label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+    color: #444;
+}
+
+.controls input[type="text"],
+.controls input[type="number"] {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+.controls input[type="text"]::placeholder {
+    color: #999;
+}
+
+.controls input[type="number"] {
+    width: 100px;
+}
+
+input:hover {
+    border-color: #999;
+}
+
+input:focus {
+    outline: none;
+    border-color: #666;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+input:invalid {
+    border-color: #ff6b6b;
+    background-color: #fff0f0;
+}
